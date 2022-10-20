@@ -1,13 +1,279 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo:wght@100;400&display=swap');
+
+
+body, html {
+  font-family: 'Roboto Condensed', sans-serif;
+      
+    background-color: #F3F3F3 !important;
+  padding-top: 40px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+h1{
+  font-weight: 900 !important;
+  text-align: center;
+  font-size: 100px;
+}
+
+.navbar{
+  background-color: #ffffff !important;
+  
+}
+
+.brand{
+  color: #E75175 !important;
+  font-size: 35px !important;
+  font-weight: bold !important;
+  font-family: 'Macondo', cursive;;
+}
+
+.dropdown-toggle::after {
+  display: none !important; 
+}
+
+.nav-links {
+  font-weight: 900 !important;
+  
+  color: black !important;
+  
+
+  }
+
+.nav-links:hover {
+  
+  color: #E75175 !important; /*will change color of text within the element on hover */
+  }
+
+  .cart-account{
+    color: black !important;
+  }
+/* #E75175 */
+
+
+/* Category Dropdown */
+.categories{
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+
+.category-header{
+  color: black !important;
+}
+.category-header:hover{
+  color: #E75175 !important;
+}
+
+@media (max-width:900px){
+  .categories{
+    display: none;
+  }
+}
+/* Carousel */
+
+.carousel{
+  margin: 0px 0px 0px 10px;
+}
+
+
+
+/* Footer */
+
+.footer{
+  
+left:0;
+bottom:0;
+right:0;
+}
+
+/* Horizontal Scroll */
+.scrolling-wrapper{
+	overflow-x: auto;
+}
+.card-block{
+	height: 300px;
+	background-color: #fff;
+	border: none;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.2s ease-in-out !important;
+	border-radius: 24px;
+}
+
+
+/* Brands */
+.content-padder{
+  padding: 0px 100px !important;
+}
+/*Product Card */
+.product-card{
+  border: none !important;
+}
+.card {
+  margin: 0px 0px 20px 0px !important;
+  
+  background-color: #ffffff;
+}
+.card-body{
+  text-align: center !important;
+  padding: 0 !important;
+}
+.card-header{
+  background-color: #ffffff !important;
+  border:none !important;
+  margin: 0 !important;
+  
+}
+.card-header-text{
+  margin: 0px 5px 0px 0px;
+}
+.card-header-featured{
+  color: #E75175;
+}
+.card-header-bestseller{
+  color: rgb(0, 128, 32);
+}
+
+
+.card-title {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+ 
+  
+}
+
+.card-footer{
+  text-align: center;
+  margin: 0 !important;
+ 
+  background-color: #ffffff !important;
+}
+
+@media(max-width:900px){
+  .card-footer{
+    display: none;
+  }
+  
+}
+
+.btn-block{
+  font-size: large !important;
+  background-color: #E75175 !important;
+  margin: 0 !important;
+  color: white !important;
+ border-radius: 0 !important;
+ border: none !important;
+ padding: 4px 30px 4px 30px !important;
+  
+  
+}
+
+.heart{
+ 
+  padding-top: 5px;
+  
+}
+
+.link{
+  text-decoration: none;
+  color: black ;
+}
+.link:hover{
+color: #E75175;
+}
+
+/* Collection Screen */
+.accordion-card{
+  border:none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  
+}
+.accordion-item{
+  padding: o !important;
+}
+
+/* Product Screen */
+.unselected-images{
+  list-style: none;
+
+}
+.product-screen{
+  background-color: #ffffff;
+}
+
+
+.product-image-unselected{
+  border-style: ridge;
+  border-width: 0.5px;
+  border-color:#E75175;
+  margin-top: 10px;
+  width: 50px !important;
+
+}
+
+.sizes{
+  margin-top: 20px !important;
+  
+}
+.size-selected{
+  background-color: #E75175;
+  color: white;
+}
+
+.pp-btn{
+  padding: 8px 100px 0px 100px;
+}
+.product-description{
+  padding: 10px !important;
+}
+.table-c-size{
+  color: #E75175 !important;
+}
+.size-table{
+  padding: 10px;
+}
+
+/* General */
+.right-border{
+  border-style:none ridge none none !important;
+}
+.top-border{
+ border-top: ridge;
+}
+
+.border{
+  padding: 10px;
+  margin: 10px;
+  border-style: ridge;
+  border-width: 0.5px;
+  border-color:#E75175;
+  border-radius: 10px;
+}
+
+.container{
+  padding: 0 !important;
+}
+
+.product-details-section{
+  margin: 20px 0px 20px 0px !important;
+}
+.form-control:focus{
+  border-color: #E75175 !important;
+  box-shadow: 0 0 0 0.2rem rgba(231, 81, 117, 0.075) !important;
+}
+
+a{
+ color: black !important;
+}
+
+.btn-border{
+  border-radius: 6px !important;
+}
+.primary-color{
+  color: #E75175 !important;
 }
